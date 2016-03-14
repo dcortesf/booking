@@ -1,0 +1,5 @@
+com/serenity/booking/BookingApp.class
+com/serenity/booking/repository/LevelRepository.class
+com/serenity/booking/repository/TypeRepository.class
+com/serenity/booking/model/CourseLevel.class
+com/serenity/booking/model/CourseType.class
