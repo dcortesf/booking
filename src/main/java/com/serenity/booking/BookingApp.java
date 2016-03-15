@@ -38,7 +38,7 @@ public class BookingApp {
 	    //System.out.println((repoBooking.findAll()).size());
 	    System.out.println((repoLevel.findAll()).size());
 	    System.out.println((repoType.findAll()).size());
-	    System.out.println((repoCourse.findAllByOrderByDdateAsc()).size());
+	    System.out.println((repoCourse.findAllByOrderByDdateAscIdCourseTypeAsc()).size());
 	    System.out.println((repoBooking.findAll()).size());
 
 	}

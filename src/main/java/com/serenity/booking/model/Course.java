@@ -14,6 +14,7 @@ public class Course {
 	private Date ddate;
 	private int idCourseType;
 	private int idCourseLevel;
+	private int active;
 	
 	public int getIdCourse() {
 		return idCourse;
@@ -44,6 +45,12 @@ public class Course {
 	}
 	public void setIdCourseLevel(int idCourseLevel) {
 		this.idCourseLevel = idCourseLevel;
+	}
+	public int getActive() {
+		return active;
+	}
+	public void setActive(int active) {
+		this.active = active;
 	}
 	
 	

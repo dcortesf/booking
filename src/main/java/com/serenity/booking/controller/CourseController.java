@@ -24,5 +24,13 @@ public class CourseController {
 	public @ResponseBody List<Course> getCourses(){
 		return courseServ.getCourses();
 	}
+	
+	@CrossOrigin
+	@RequestMapping(value="/activecourses", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
+	public @ResponseBody List<Course> getActiveCourses(){
+		return courseServ.getActiveCourses();
+	}
+
+	
 
 }
