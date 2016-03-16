@@ -16,7 +16,7 @@ public class BookingService {
 	
 	public List<Booking> getBookingByIdCourse(Integer idCourse){
 		
-		return rBooking.findByIdCourse(idCourse);
+		return rBooking.findByIdCourseOrderByName(idCourse);
 		
 	}
 

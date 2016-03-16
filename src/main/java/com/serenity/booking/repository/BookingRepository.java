@@ -8,6 +8,6 @@ import com.serenity.booking.model.Booking;
 public interface BookingRepository extends Repository<Booking, Integer> {
 	
 	List<Booking> findAll();
-	List<Booking> findByIdCourse(Integer idCourse);
+	List<Booking> findByIdCourseOrderByName(Integer idCourse);
 
 }
