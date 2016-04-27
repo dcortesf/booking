@@ -18,6 +18,13 @@ public class TypeService {
 		return rType.findAll();
 	}
 	
+	public CourseType save(CourseType courseType){
+		return rType.save(courseType);
+	}
+	
+	public void delete(CourseType courseType){
+		rType.delete(courseType);
+	}
 	
 	
 

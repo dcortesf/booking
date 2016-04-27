@@ -3,8 +3,10 @@ package com.serenity.booking.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="booking")
 public class Booking {
 	
 	@Id
@@ -14,9 +16,10 @@ public class Booking {
 	private String user;
 	private String name;
 	private String dni;
-	
 	private int idCourse;
 	private String email;
+	
+	
 	public int getIdBooking() {
 		return idBooking;
 	}

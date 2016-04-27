@@ -5,13 +5,14 @@ import java.util.Arrays;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Import;
 
-import com.serenity.booking.repository.BookingRepository;
 import com.serenity.booking.repository.CourseRepository;
-import com.serenity.booking.repository.LevelRepository;
-import com.serenity.booking.repository.TypeRepository;
+
+import io.swagger.models.Swagger;
 
 @SpringBootApplication
+@Import(Swagger.class)
 public class BookingApp {
 	
 	
@@ -20,9 +21,9 @@ public class BookingApp {
 		ApplicationContext ctx = SpringApplication.run(BookingApp.class, args);
 		
 		
-		BookingRepository repoBooking = (BookingRepository)ctx.getBean("bookingRepository");
-		LevelRepository repoLevel = (LevelRepository)ctx.getBean("levelRepository");
-		TypeRepository repoType = (TypeRepository)ctx.getBean("typeRepository");
+		//BookingRepository repoBooking = (BookingRepository)ctx.getBean("bookingRepository");
+		//LevelRepository repoLevel = (LevelRepository)ctx.getBean("levelRepository");
+		//TypeRepository repoType = (TypeRepository)ctx.getBean("typeRepository");
 		CourseRepository repoCourse = (CourseRepository)ctx.getBean("courseRepository");
 		
 		
@@ -36,10 +37,10 @@ public class BookingApp {
 	    }
 	    
 	    //System.out.println((repoBooking.findAll()).size());
-	    System.out.println((repoLevel.findAll()).size());
-	    System.out.println((repoType.findAll()).size());
-	    System.out.println((repoCourse.findAllByOrderByDdateAscIdCourseTypeAsc()).size());
-	    System.out.println((repoBooking.findAll()).size());
+	    //System.out.println((repoLevel.findAll()).size());
+	    //System.out.println((repoType.findAll()).size());
+	    System.out.println((repoCourse.findAllByOrderByDdateAsc()).size());
+	    //System.out.println((repoBooking.findAll()).size());
 
 	}
 	

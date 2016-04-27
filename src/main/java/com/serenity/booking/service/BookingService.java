@@ -19,5 +19,18 @@ public class BookingService {
 		return rBooking.findByIdCourseOrderByName(idCourse);
 		
 	}
+	
+	public void delete(Booking booking){
+		rBooking.delete(booking);
+	}
+	
+	public boolean save(Booking booking){
+		
+		List<Booking> list = rBooking.findByIdCourseOrderByName(booking.getIdCourse());
+		if(list.size()<21) rBooking.save(booking);
+		else return false;
+		
+		return true;
+	}
 
 }

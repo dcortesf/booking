@@ -17,16 +17,25 @@ public class CourseService {
 	CourseRepository courseR;
 	
 	public List<Course> getCourses(){
-		return courseR.findAllByOrderByDdateAscIdCourseTypeAsc();
+		return courseR.findAllByOrderByDdateAsc();
 	}
 	
-	
-	
+		
 	public List<Course> getActiveCourses(){		
 		Date d = new Date(new java.util.Date().getTime());
 		return courseR.findAllByActiveAndDdateGreaterThanOrderByDdateAsc(1, d);
 	}
 	
+	public void save(Course course){
+		courseR.save(course);
+	}
 	
-
+	public Course findOne(Integer id){
+		return courseR.findOne(id);
+	}
+	
+	public void deleteCourse(Course course){
+		courseR.delete(course);
+	}
+	
 }

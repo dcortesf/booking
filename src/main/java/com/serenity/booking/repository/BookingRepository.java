@@ -9,5 +9,7 @@ public interface BookingRepository extends Repository<Booking, Integer> {
 	
 	List<Booking> findAll();
 	List<Booking> findByIdCourseOrderByName(Integer idCourse);
+	void delete(Booking booking);
+	void save(Booking booking);
 
 }

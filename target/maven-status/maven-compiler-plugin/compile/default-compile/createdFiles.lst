@@ -1,5 +1,17 @@
+com/serenity/booking/controller/CourseController.class
+com/serenity/booking/repository/CourseRepository.class
 com/serenity/booking/BookingApp.class
+com/serenity/booking/model/Booking.class
+com/serenity/booking/controller/BookingController.class
 com/serenity/booking/repository/LevelRepository.class
+com/serenity/booking/controller/CourseLevelController.class
 com/serenity/booking/repository/TypeRepository.class
 com/serenity/booking/model/CourseLevel.class
+com/serenity/booking/repository/BookingRepository.class
+com/serenity/booking/service/BookingService.class
+com/serenity/booking/service/LevelService.class
 com/serenity/booking/model/CourseType.class
+com/serenity/booking/service/CourseService.class
+com/serenity/booking/service/TypeService.class
+com/serenity/booking/controller/CourseTypeController.class
+com/serenity/booking/model/Course.class
